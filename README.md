@@ -1,6 +1,6 @@
 # Signature Detection
 
-This use-case project is provided be *Business & Decision*. In this project, we have to devlop an AI model to detect and locate a signature in a document
+This use-case project is provided by *Business & Decision*. In this project, we have to devlop an AI model to detect and locate a signature in a document
 
 **Success criterias:**  
 *...*
@@ -9,7 +9,7 @@ This use-case project is provided be *Business & Decision*. In this project, we 
 
 ## Project Guidelines
 
-- Repository: `image-signature-detection`
+- Repository: `signature-detection`
 - Type of Challenge: `Use-case`
 - Duration: `2 weeks`
 - Deadline: `22/10/2021`
@@ -19,7 +19,7 @@ This use-case project is provided be *Business & Decision*. In this project, we 
 
 ## Data
 
-The dataset provided for this project contains a train set of documents associated with XML files containing informations about Signatures positions. And a test folder containing documents __without__ XML files
+The dataset provided for this project contains a train set of documents associated with XML files containing informations about Signatures positions. And a test folder containing documents <u>without</u> XML files
 
 ----------
 
