@@ -11,7 +11,7 @@ This use-case project is provided by *Business & Decision*. In this project, we 
 
 - Repository: `signature-detection`
 - Type of Challenge: `Use-case`
-- Duration: `2 weeks`
+- Duration: `1 week`
 - Deadline: `22/10/2021`
 - Team Challenge : `Solo`
 
