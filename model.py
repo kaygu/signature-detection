@@ -6,8 +6,7 @@ IMG_SIZE = 128
 
 def build_model(x, y):
 
-    x_train_val, x_test, y_train_val, y_test = train_test_split(x, y, test_size=0.15, random_state=123)
-    x_train, x_val, y_train, y_val = train_test_split(x_train_val, y_train_val, test_size=0.2, random_state=123)
+    x_train, x_val, y_train, y_val = train_test_split(x, y, test_size=0.2, random_state=123)
 
     # Model architecture
     model = tf.keras.models.Sequential([
@@ -46,7 +45,8 @@ def build_model(x, y):
         y_train,
         # Define how big are gonna be your batch.
         batch_size=64,
-        seed=0
+        seed=0,
+        # subset="training"
     )
     validation_generator = validation_datagen.flow(
         # This is the source directory for validation images    
@@ -54,7 +54,8 @@ def build_model(x, y):
         y_val,
         # Define how big are gonna be your batch.
         batch_size=64,
-        seed=0
+        seed=0,
+        # subset="validation"
     )
     class myCallback(tf.keras.callbacks.Callback):
         def on_epoch_end(self, epoch, logs={}):
@@ -70,5 +71,5 @@ def build_model(x, y):
     )
 
     print(history.epoch, history.history['accuracy'][-1])
-    model.evaluate(x_test, y_test)
+    model.evaluate(x_val, y_val)
     return model

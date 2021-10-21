@@ -5,3 +5,5 @@ __pycache__
 
 *.npy
 *.h5
+*.csv
+!sample_submission.csv
